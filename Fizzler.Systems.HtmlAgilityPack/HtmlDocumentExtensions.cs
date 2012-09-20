@@ -1,4 +1,6 @@
-﻿namespace Fizzler.Systems.HtmlAgilityPack
+﻿using System.Collections.Generic;
+
+namespace Fizzler.Systems.HtmlAgilityPack
 {
     #region Imports
 
@@ -11,7 +13,7 @@
 
     public static class HtmlDocumentExtensions
     {
-        private static Hashtable _defaultElementFlags;
+        private static Dictionary<string, HtmlElementFlag> _defaultElementFlags;
 
         // TODO Think of a better name than LoadHtml2
         /// <summary>
@@ -48,7 +50,7 @@
         /// </remarks>
 
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public static void LoadHtmlWithElementFlags(this HtmlDocument document, string html, Hashtable flags)
+        public static void LoadHtmlWithElementFlags(this HtmlDocument document, string html, Dictionary<string, HtmlElementFlag> flags)
         {
             if (document == null) throw new ArgumentNullException("document");
             LoadWithElementFlags(flags, () => document.LoadHtml(html));
@@ -65,7 +67,7 @@
         /// </remarks>
 
         [MethodImpl(MethodImplOptions.Synchronized)]
-        public static void LoadWithElementFlags(this HtmlDocument document, string path, Hashtable flags)
+        public static void LoadWithElementFlags(this HtmlDocument document, string path, Dictionary<string, HtmlElementFlag> flags)
         {
             if (document == null) throw new ArgumentNullException("document");
             LoadWithElementFlags(flags, () => document.Load(path));
@@ -73,7 +75,7 @@
 
         private delegate void LoadHandler();
 
-        private static void LoadWithElementFlags(Hashtable flags, LoadHandler loader)
+        private static void LoadWithElementFlags(Dictionary<string, HtmlElementFlag> flags, LoadHandler loader)
         {
             var oldFlags = HtmlNode.ElementsFlags;
             try
@@ -88,16 +90,16 @@
             }
         }
 
-        private static Hashtable DefaultElementFlags
+        private static Dictionary<string,HtmlElementFlag> DefaultElementFlags
         {
             get
             {
-                if (_defaultElementFlags == null)
+                if(_defaultElementFlags == null)
                 {
-                    var flags = (Hashtable)HtmlNode.ElementsFlags.Clone();
-                    // ReSharper disable BitwiseOperatorOnEnumWihtoutFlags
-                    flags["form"] = ((HtmlElementFlag)flags["form"]) | HtmlElementFlag.Closed;
-                    // ReSharper restore BitwiseOperatorOnEnumWihtoutFlags
+                    var flags = new Dictionary<string, HtmlElementFlag>(HtmlNode.ElementsFlags);
+                    HtmlElementFlag result;
+                    flags.TryGetValue("form", out result);
+                    flags["form"] = result | HtmlElementFlag.Closed;
                     _defaultElementFlags = flags;
                 }
 
