@@ -96,3 +96,8 @@
 /VisualFizzler/obj
 _UpgradeReport_Files
 UpgradeLog.*
+packages
+*.cache
+
+[Bb]in
+[Oo]bj

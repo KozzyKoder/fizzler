@@ -20,11 +20,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualFizzler", "VisualFizz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler.Sandbox", "Fizzler.Sandbox\Fizzler.Sandbox.csproj", "{80456F6D-6853-4244-8E3D-F22ECA0980EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler", "NET-2.0\Fizzler.csproj", "{278E9225-9FE5-4D63-9C9B-206FC68BAA37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler", "NET-2.0\Fizzler\Fizzler.csproj", "{278E9225-9FE5-4D63-9C9B-206FC68BAA37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler.Systems.HtmlAgilityPack", "NET-2.0\Fizzler.Systems.HtmlAgilityPack.csproj", "{48822D9C-C17E-412B-96AE-F740EEF87990}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler.Systems.HtmlAgilityPack", "NET-2.0\Fizzler.Systems.HtmlAgilityPack\Fizzler.Systems.HtmlAgilityPack.csproj", "{48822D9C-C17E-412B-96AE-F740EEF87990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler.Tests", "NET-2.0\Fizzler.Tests.csproj", "{CA756450-AB7A-4FB0-97C4-35B8FBE89021}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizzler.Tests", "NET-2.0\Fizzler.Tests\Fizzler.Tests.csproj", "{CA756450-AB7A-4FB0-97C4-35B8FBE89021}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFizzler", "ConsoleFizzler\ConsoleFizzler.csproj", "{296C2824-A7D7-42A0-9B4C-1BC8FA0A1859}"
 EndProject
