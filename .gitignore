@@ -1,0 +1,96 @@
+
+# /
+/*.cache
+/*.ncb
+/*.patch
+/*.suo
+/*.user
+/TestResults
+/_ReSharper.*
+/attic
+/bin
+
+# /Common/
+
+# /ConsoleFizzler/
+/ConsoleFizzler/[Bb]in
+/ConsoleFizzler/obj
+/ConsoleFizzler/[Dd]ebug
+/ConsoleFizzler/[Rr]elease
+/ConsoleFizzler/*.user
+/ConsoleFizzler/*.aps
+/ConsoleFizzler/*.eto
+
+# /Fizzler/
+/Fizzler/[Bb]in
+/Fizzler/obj
+/Fizzler/[Dd]ebug
+/Fizzler/[Rr]elease
+/Fizzler/*.user
+/Fizzler/*.aps
+/Fizzler/*.eto
+
+# /Fizzler.Sandbox/
+/Fizzler.Sandbox/bin
+/Fizzler.Sandbox/obj
+/Fizzler.Sandbox/*.user
+
+# /Fizzler.Sandbox/Xml/
+
+# /Fizzler.Systems.HtmlAgilityPack/
+/Fizzler.Systems.HtmlAgilityPack/[Bb]in
+/Fizzler.Systems.HtmlAgilityPack/obj
+/Fizzler.Systems.HtmlAgilityPack/[Dd]ebug
+/Fizzler.Systems.HtmlAgilityPack/[Rr]elease
+/Fizzler.Systems.HtmlAgilityPack/*.user
+/Fizzler.Systems.HtmlAgilityPack/*.aps
+/Fizzler.Systems.HtmlAgilityPack/*.eto
+
+# /Fizzler.Tests/
+/Fizzler.Tests/[Bb]in
+/Fizzler.Tests/obj
+/Fizzler.Tests/[Dd]ebug
+/Fizzler.Tests/[Rr]elease
+/Fizzler.Tests/*.user
+/Fizzler.Tests/*.aps
+/Fizzler.Tests/*.eto
+
+# /NET-2.0/
+/NET-2.0/*.user
+/NET-2.0/bin
+/NET-2.0/obj
+/NET-2.0/[Bb]in
+/NET-2.0/[Dd]ebug
+/NET-2.0/[Rr]elease
+/NET-2.0/*.aps
+/NET-2.0/*.eto
+
+# /Tools/
+
+# /Tools/nant/
+
+# /Tools/nant/bin/
+
+# /Tools/nant/bin/extensions/
+
+# /Tools/nant/bin/extensions/common/
+
+# /Tools/nant/bin/extensions/common/2.0/
+
+# /Tools/nant/bin/lib/
+
+# /Tools/nant/bin/lib/common/
+
+# /Tools/nant/bin/lib/common/1.1/
+
+# /Tools/nant/bin/lib/common/2.0/
+
+# /Tools/nant/bin/lib/common/neutral/
+
+# /Tools/nant/bin/lib/net/
+
+# /Tools/nant/bin/lib/net/1.0/
+
+# /VisualFizzler/
+/VisualFizzler/bin
+/VisualFizzler/obj
