@@ -94,3 +94,5 @@
 # /VisualFizzler/
 /VisualFizzler/bin
 /VisualFizzler/obj
+_UpgradeReport_Files
+UpgradeLog.*
